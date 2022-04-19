@@ -1,0 +1,15 @@
+@import './vendor/normalize';
+@import './partials/colors';
+@import './partials/mixins';
+
+body{
+padding: 2em;
+
+}
+
+.flex-container {
+div{
+    @include border-box();
+}
+
+}
