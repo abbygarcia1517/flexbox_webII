@@ -1,5 +1,19 @@
 @import 'partials/base';
+@import 'partials/mixins';
 
+@media (min-width: 1024px){
+
+}
+
+@media (min-width: 900px){
+
+
+}
+
+
+h1{
+    font-size: 4em;
+}
 
 .navigation{
 display: flex;
@@ -10,48 +24,39 @@ justify-content: space-around;
 
 .hero{
 background-color: white;
-align-items: center;
 .hero-content{
     flex-direction: column;
-    h1{
-        align-content: center;
-    }
-    p{
-        align-content: center;
-    }
+    align-items: center;
+    align-content: center;
 }
 }
 
 .main-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    // align-content: flex-start;
+
+    .post{
+    width: 100%;
+    }
+    .sidebar{
+    width: 100%;
+    background-color: white;
+    }
+     
 }
 
-.sidebar{
-    background-color: white;
-}
 
 
 .mixed-layout{
 background-color: white;
-display: flex;
-flex-direction: row;
+flex-direction: column;
+
 .first{
-    p{
-        flex-grow: 1;
-    }
-    }
+    width: 100%;
+}
 .second{
-    flex-grow: 2;
+    width: 100%;
     }
 }
 
 
-// .first{
-//     flex-grow: 1;
-//     }
-
-// .second{
-//     flex-grow: 3;
-//         }
