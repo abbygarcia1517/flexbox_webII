@@ -5,10 +5,10 @@
 
 }
 
-@media (min-width: 900px){
+// @media (min-width: 900px){
 
 
-}
+// }
 
 
 h1{
@@ -32,15 +32,17 @@ background-color: white;
 }
 
 .main-container{
+    display: flex;
     flex-direction: column;
-    // align-content: flex-start;
 
     .post{
     width: 100%;
+    flex-grow: 1;
     }
     .sidebar{
     width: 100%;
     background-color: white;
+    flex-grow: 1;
     }
      
 }
