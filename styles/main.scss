@@ -1,29 +1,57 @@
-@import './vendor/normalize';
-@import './partials/colors';
-@import './partials/mixins';
+@import 'partials/base';
 
-body{
-padding: 2em;
+
+.navigation{
+display: flex;
+justify-content: space-around;
 
 }
 
-.flex-container {
+
+.hero{
+background-color: white;
+align-items: center;
+.hero-content{
+    flex-direction: column;
+    h1{
+        align-content: center;
+    }
+    p{
+        align-content: center;
+    }
+}
+}
+
+.main-container{
     display: flex;
-div{
-@include bordered-box ();
+    flex-direction: row;
+    justify-content: space-around;
 }
 
+.sidebar{
+    background-color: white;
 }
 
-.blue{
-background-color: navy; 
+
+.mixed-layout{
+background-color: white;
+display: flex;
+flex-direction: row;
+.first{
+    p{
+        flex-grow: 1;
+    }
+    }
+.second{
+    flex-grow: 2;
+    }
 }
 
-.tomato{
-background-color: tomato;
-}
 
-.green{
-background-color: green;
-}
+// .first{
+//     flex-grow: 1;
+//     }
 
+// .second{
+//     flex-grow: 3;
+//         }
